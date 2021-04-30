@@ -1,0 +1,64 @@
+.main {
+  background-color: whitesmoke;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cardViewSection {
+  display: block;
+  margin: 0 auto;
+  width: 380px;
+}
+
+/* Header , Card Image */
+
+header {
+  background-color: white;
+  padding: 10px;
+}
+
+.cardImage {
+  width: 380px;
+  height: 380px;
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Card Info */
+
+.cardInfo {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.infoLeft,
+.infoRight {
+  align-items: center;
+}
+
+.feedImg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Comment, CommentForm */
+
+.comment {
+  background-color: white;
+  padding-bottom: 10px;
+  margin-bottom: 1px;
+}
+
+.comment_form {
+  background-color: white;
+}
+
+.comment_form input[type="text"] {
+  width: 95%;
+  border: none;
+  padding: 7px;
+}

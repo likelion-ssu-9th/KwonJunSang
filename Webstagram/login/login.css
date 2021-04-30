@@ -1,0 +1,78 @@
+body {
+  background-color: whitesmoke;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Login Container */
+
+.login_container {
+  display: block;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 280px;
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid lightgrey;
+}
+
+.instagramText {
+  width: 130px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.login_container input[type="text"] {
+  width: 70%;
+  background-color: whitesmoke;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+.login_container input[type="password"] {
+  width: 70%;
+  background-color: whitesmoke;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 10px;
+}
+
+#loginButton {
+  width: 78%;
+  color: white;
+  background-color: #0c9af2;
+  padding: 3px;
+  border: none;
+  border-radius: 3px;
+}
+
+/* Join Instagram */
+
+footer {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 280px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  align-items: center;
+  justify-content: center;
+}
+
+.join {
+  font-size: 13px;
+}
+
+.joinBtn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #0c9af2;
+}
