@@ -1,0 +1,46 @@
+header {
+  margin-left: 200px;
+  margin-top: 15px;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+}
+
+/* left-side */
+
+.left_box {
+  display: flex;
+  align-items: center;
+}
+
+.favicon_frame {
+  margin-right: 30px;
+}
+
+.faviconFrame {
+  width: 25px;
+}
+
+.logo {
+  width: 110px;
+}
+
+/* right-side */
+
+.right_box {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  width: 25px;
+}
+
+.myInfo {
+  width: 25px;
+}
+
+.myInfo_box {
+  margin-left: 30px;
+}
