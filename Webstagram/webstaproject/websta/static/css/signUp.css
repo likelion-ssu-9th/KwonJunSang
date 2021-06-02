@@ -1,7 +1,6 @@
-body {
+.main {
   background-color: whitesmoke;
   height: 100vh;
-  overflow: hidden;
 }
 
 /* SignUp Container */

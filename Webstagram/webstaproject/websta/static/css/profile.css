@@ -2,11 +2,11 @@ ul {
   list-style: none;
 }
 
-header {
+.profile_header {
   display: flex;
   margin: 0 auto;
   width: 800px;
-  margin-top: 50px;
+  margin-top: 30px;
   justify-content: flex-start;
   align-items: center;
 }

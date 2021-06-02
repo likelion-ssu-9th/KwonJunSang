@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html'%}
 <head>
-<meta charset="utf-8">
-<title>Instagram</title>
-<link href="background.css" rel="stylesheet" type="text/css"/>
-<link href="profile.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" href="../img/icon.png">
+{% load static %}
+{% block extrahead %}
+<link href="{% static 'css/profile.css'%}" rel="stylesheet" type="text/css"/>
+{% endblock %}
 </head>
-<body>
-    <header>
+{% block content %}
+    <header class="profile_header">
         <div class="profileImgBox">
             <button class="profileBtn">
-                <img class="profileImage" src="../img/ssu_likelion_logo_150x150.png" alt="프로필 이미지">
+                <img class="profileImage" src="{% static 'img/ssu_likelion_logo_150x150.png' %}" alt="프로필 이미지">
             </button>
         </div>
         <div class="profileBox">
@@ -34,7 +32,7 @@
     <main>
         <div class="post">
             <div class="postImg">
-                <img class="galleryImg" src="../img/lionface.png" alt="사자 얼굴">
+                <img class="galleryImg" src="{% static 'img/lionface.png' %}" alt="사자 얼굴">
             </div>
             <ul class="postInfo">
                 <li>Likes: 0</li>
@@ -43,7 +41,7 @@
         </div>
         <div class="post">
             <div class="postImg">
-                <img class="galleryImg" src="../img/lionface.png" alt="사자 얼굴">
+                <img class="galleryImg" src="{% static 'img/lionface.png' %}" alt="사자 얼굴">
             </div>
             <ul class="postInfo">
                 <li>Likes: 0</li>
@@ -52,7 +50,7 @@
         </div>
         <div class="post">
             <div class="postImg">
-                <img class="galleryImg" src="../img/lionface.png" alt="사자 얼굴">
+                <img class="galleryImg" src="{% static 'img/lionface.png' %}" alt="사자 얼굴">
             </div>
             <ul class="postInfo">
                 <li>Likes: 0</li>
@@ -60,5 +58,4 @@
             </ul>
         </div>
     </main>
-</body>
-</html>
+{% endblock %}

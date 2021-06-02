@@ -1,10 +1,12 @@
-header {
-  margin-left: 200px;
-  margin-top: 15px;
-  width: 800px;
+.base_header {
+  margin-top: 0;
+  padding: 15px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 2rem;
+  height: 32px;
+  color: white;
+  background-color: white;
 }
 
 /* left-side */
@@ -12,6 +14,7 @@ header {
 .left_box {
   display: flex;
   align-items: center;
+  margin-left: 200px;
 }
 
 .favicon_frame {
@@ -22,8 +25,12 @@ header {
   width: 25px;
 }
 
-.logo {
+.logo_box {
   width: 110px;
+}
+
+.navlogo {
+  width: 100%;
 }
 
 /* right-side */
@@ -31,6 +38,7 @@ header {
 .right_box {
   display: flex;
   align-items: center;
+  margin-right: 200px;
 }
 
 .heart {
@@ -43,4 +51,8 @@ header {
 
 .myInfo_box {
   margin-left: 30px;
+}
+
+.navline {
+  margin: 0;
 }

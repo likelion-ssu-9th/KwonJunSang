@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram</title>
+<link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css"/>
+<link rel="icon" href="{% static 'img/icon.png'%}">
+{% block extrahead %}
+{% endblock %}
+</head>
+<body>
+    {% load static %}
+    <header class="base_header">
+        <div class="left_box">
+            <div class="favicon_frame">
+                <img class="faviconFrame" src="{% static 'img/line_favicon.png' %}" alt="인스타 로고"/>
+            </div>
+            <div class="logo_box">
+                <img class="navlogo" src="{% static 'img/logo_text.png' %}" alt="인스타 글씨"/>
+            </div>
+        </div>
+        <div class="right_box">
+            <div class="heart_box">
+                <img class="heart" src="{% static 'img/liked.png' %}" alt="글 작성"/>
+            </div>
+            <div class="myInfo_box">
+                <img class="myInfo" src="{% static 'img/myinfo.png' %}" alt="내 프로필"/>
+            </div>
+        </div>
+    </header>
+    <hr class="navline" color="#E2E2E2" size="1px">
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
