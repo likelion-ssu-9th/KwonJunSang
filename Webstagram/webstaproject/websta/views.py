@@ -1,10 +1,12 @@
 from django.shortcuts import render
+from .models import Websta
 
 # Create your views here.
 
 
 def feed(request):
-    return render(request, 'feed.html')
+    posts = Websta.objects.all()
+    return render(request, 'feed.html', {'posts': posts})
 
 
 def login(request):

@@ -1,6 +1,5 @@
 .main {
   background-color: whitesmoke;
-  height: 100vh;
 }
 
 .cardViewSection {
@@ -13,12 +12,8 @@
 
 .userNickName {
   background-color: white;
-  padding: 100px;
-  font-size: 100px;
-}
-
-.skirttt {
-  background-color: aqua;
+  padding: 10px;
+  font-size: 18px;
 }
 
 .cardImage {
