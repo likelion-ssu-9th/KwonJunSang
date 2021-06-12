@@ -14,20 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from websta.views import *
+from django.urls import path, include
+from websta.views import feed
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', feed, name='feed'),
-    path('profile/', profile, name="profile"),
-    path('login/', login, name="login"),
-    path('signup/', signup, name="signup"),
-    path('new/', new, name="new"),
-    path('create/', create, name="create"),
-    path('edit/<str:id>', edit, name="edit"),
-    path('update/<str:id>', update, name="update"),
-    path('delete/<str:id>', delete, name="delete"),
+    path('websta/', include('websta.urls')),
+    path('account/', include('account.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
