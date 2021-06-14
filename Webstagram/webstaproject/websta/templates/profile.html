@@ -14,7 +14,7 @@
         </div>
         <div class="profileBox">
             <div class="profile">
-                <h1 class="userName">LikeLionSSU</h1>
+                <h1 class="userName">{{writer.username}}</h1>
                 <button class="profileEditBtn">프로필 편집</button>
             </div>   
             <div class="profileInfo">
@@ -30,32 +30,16 @@
         </div>
     </header>
     <main>
+        {% for post in writer_posts %}
         <div class="post">
             <div class="postImg">
-                <img class="galleryImg" src="{% static 'img/lionface.png' %}" alt="사자 얼굴">
+                <img class="galleryImg" src="{{post.image.url}}" alt="이미지">
             </div>
             <ul class="postInfo">
                 <li>Likes: 0</li>
                 <li>Comments: 0</li>
             </ul>
         </div>
-        <div class="post">
-            <div class="postImg">
-                <img class="galleryImg" src="{% static 'img/lionface.png' %}" alt="사자 얼굴">
-            </div>
-            <ul class="postInfo">
-                <li>Likes: 0</li>
-                <li>Comments: 0</li>
-            </ul>
-        </div>
-        <div class="post">
-            <div class="postImg">
-                <img class="galleryImg" src="{% static 'img/lionface.png' %}" alt="사자 얼굴">
-            </div>
-            <ul class="postInfo">
-                <li>Likes: 0</li>
-                <li>Comments: 0</li>
-            </ul>
-        </div>
+        {% endfor %}
     </main>
 {% endblock %}

@@ -10,7 +10,7 @@
         <section class="cardViewSection">
             {%for post in posts %}
             <br class="cardView">
-                <div class="userNickName">{{post.writer}}</div>
+                <div class="userNickName"><a href="{% url 'profile' post.writer.id%}">{{post.writer.username}}</a></div>
                 <div class="cardImage">
                     <img class="cardImg" src="{{post.image.url}}" alt="sample">
                 </div>
