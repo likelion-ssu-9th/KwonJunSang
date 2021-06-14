@@ -18,14 +18,11 @@
     </div>
     <div>
         <footer class="joinInsta">
-            <form action="" method="post">
-            {%csrf_token%}
             <p class="join">계정이 없으신가요? 
-            <a href="#">
+            <a href="{% url 'signup' %}">
                 <button class="joinBtn">가입하기</button>
             </a>
             </p>
-            </form>
         </footer>
     </div>
 </div>
