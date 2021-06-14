@@ -62,3 +62,8 @@
 .navline {
   margin: 0;
 }
+
+.navbar_item > a {
+  color: black;
+  text-decoration: none;
+}
